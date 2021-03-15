@@ -51,6 +51,18 @@ DUEL_BUILD_PASSIVES = {
     "broodmother_incapacitating_bite",
     "bounty_hunter_jinada",
     "weaver_geminate_attack",
+    "chen_divine_favor",
+    "spectre_desolate",
+    "spectre_dispersion",
+    "spirit_breaker_empowering_haste",
+    "spirit_breaker_greater_bash",
+    "ursa_fury_swipes",
+    "alchemist_goblins_greed",
+    "lycan_feral_impulse",
+    "brewmaster_drunken_brawler",
+    "chaos_knight_chaos_strike",
+    "meepo_geostrike",
+    "meepo_ransack",
 }
 
 DUEL_BUILD_MOVEMENT = {
@@ -83,6 +95,11 @@ DUEL_BUILD_MOVEMENT = {
     "bounty_hunter_track",
     "weaver_shukuchi",
     "batrider_firefly",
+    "spectre_spectral_dagger",
+    "spirit_breaker_charge_of_darkness",
+    "invoker_ghost_walk_ad",
+    "lycan_shapeshift",
+    "chaos_knight_reality_rift",
 }
 
 DUEL_BUILD_DAMAGE_SCALING = {
@@ -95,6 +112,18 @@ DUEL_BUILD_DAMAGE_SCALING = {
     "warlock_fatal_bonds",
     "phantom_assassin_stifling_dagger",
     "dragon_knight_elder_dragon_form",
+    "gyrocopter_flak_cannon",
+    "alchemist_chemical_rage",
+}
+
+DUEL_BUILD_ATTACK_MODS = {
+    "drow_ranger_frost_arrows",
+    "ancient_apparition_chilling_touch",
+    "viper_poison_attack",
+    "huskar_burning_spear",
+    "doom_bringer_infernal_blade",
+    "silencer_glaives_of_wisdom",
+    "obsidian_destroyer_arcane_orb",
 }
 
 DUEL_BUILD_DISABLE = {
@@ -131,6 +160,14 @@ DUEL_BUILD_DISABLE = {
     "leshrac_split_earth",
     "jakiro_ice_path",
     "batrider_flaming_lasso",
+    "ancient_apparition_cold_feet",
+    "spirit_breaker_nether_strike",
+    "gyrocopter_homing_missile",
+    "invoker_cold_snap_ad",
+    "invoker_tornado_ad",
+    "obsidian_destroyer_astral_imprisonment",
+    "shadow_demon_disruption",
+    "chaos_knight_chaos_bolt",
 }
 
 DUEL_BUILD_BUFF = {
@@ -159,13 +196,18 @@ DUEL_BUILD_BUFF = {
     "night_stalker_darkness",
     "broodmother_insatiable_hunger",
     "weaver_time_lapse",
+    "doom_bringer_scorched_earth",
+    "spirit_breaker_bulldoze",
+    "ursa_overpower",
+    "ursa_enrage",
+    "gyrocopter_rocket_barrage",
+    "invoker_alacrity_ad",
 }
 
 DUEL_BUILD_DEBUFF = {
     "bane_enfeeble",
     "bloodseeker_blood_bath",
     "bloodseeker_rupture",
-    "drow_ranger_frost_arrows",
     "drow_ranger_wave_of_silence",
     "kunkka_x_marks_the_spot",
     "phantom_lancer_spirit_lance",
@@ -191,7 +233,6 @@ DUEL_BUILD_DEBUFF = {
     "venomancer_poison_nova",
     "faceless_void_time_dilation",
     "beastmaster_wild_axes",
-    "viper_poison_attack",
     "viper_nethertoxin",
     "viper_viper_strike",
     "dragon_knight_breathe_fire",
@@ -200,7 +241,6 @@ DUEL_BUILD_DEBUFF = {
     "leshrac_lightning_storm",
     "enchantress_enchant",
     "huskar_inner_fire",
-    "huskar_burning_spear",
     "night_stalker_void",
     "night_stalker_crippling_fear",
     "weaver_the_swarm",
@@ -208,4 +248,21 @@ DUEL_BUILD_DEBUFF = {
     "jakiro_liquid_fire",
     "batrider_sticky_napalm",
     "chen_penitence",
+    "doom_bringer_doom",
+    "ursa_earthshock",
+    "gyrocopter_call_down",
+    "alchemist_acid_spray",
+    "invoker_ice_wall_ad",
+    "invoker_deafening_blast_ad",
+    "silencer_curse_of_the_silent",
+    "silencer_last_word",
+    "silencer_global_silence",
+    "lycan_howl",
+    "brewmaster_thunder_clap",
+    "brewmaster_drunken_haze",
+    "brewmaster_cinder_brew",
+    "shadow_demon_soul_catcher",
+    "shadow_demon_demonic_purge",
+    "meepo_earthbind",
+    "treant_natures_grasp",
 }
