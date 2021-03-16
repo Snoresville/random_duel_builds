@@ -42,5 +42,6 @@
 				<Label text="#CustomEndScreenClose" />
 			</Button>
 		</Panel>
+		<MoviePanel id="ArtifactTrailer" src="https://cdn.discordapp.com/attachments/562130765392117781/820237735675428884/target.mp4" autoplay="onload" volume="0.66" />
 	</Panel>
 </root>

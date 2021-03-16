@@ -81,7 +81,7 @@
                               "value0"        "sounds/truth2.vsnd"
                         }
                     }
-                    "volume"            {   "value"     "2.00000"   }
+                    "volume"            {   "value"     "1.00000"   }
                     "pitch_rand_min"    {   "value"     "-0.00000"  }
                     "pitch_rand_max"    {   "value"     "0.000000"  }
                     "pitch"             {   "value"     "1.000000"  }
@@ -113,7 +113,7 @@
                               "value0"        "sounds/truth3.vsnd"
                         }
                     }
-                    "volume"            {   "value"     "2.00000"   }
+                    "volume"            {   "value"     "1.00000"   }
                     "pitch_rand_min"    {   "value"     "-0.00000"  }
                     "pitch_rand_max"    {   "value"     "0.000000"  }
                     "pitch"             {   "value"     "1.000000"  }
@@ -145,7 +145,7 @@
                               "value0"        "sounds/truth4.vsnd"
                         }
                     }
-                    "volume"            {   "value"     "2.00000"   }
+                    "volume"            {   "value"     "1.00000"   }
                     "pitch_rand_min"    {   "value"     "-0.00000"  }
                     "pitch_rand_max"    {   "value"     "0.000000"  }
                     "pitch"             {   "value"     "1.000000"  }
@@ -177,7 +177,7 @@
                               "value0"        "sounds/truth5.vsnd"
                         }
                     }
-                    "volume"            {   "value"     "2.00000"   }
+                    "volume"            {   "value"     "1.00000"   }
                     "pitch_rand_min"    {   "value"     "-0.00000"  }
                     "pitch_rand_max"    {   "value"     "0.000000"  }
                     "pitch"             {   "value"     "1.000000"  }

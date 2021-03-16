@@ -14,6 +14,8 @@ ListenToGameEvent("game_rules_state_change", function()
 	end
 end, self)
 
+local is_coalescence_playing = false
+local streak_responses = LoadKeyValues("scripts/npc/topplays.txt")
 ListenToGameEvent("entity_killed", function(keys)
 	-- for k,v in pairs(keys) do	print("entity_killed",k,v) end
 	local attackerUnit = keys.entindex_attacker and EntIndexToHScript(keys.entindex_attacker)
@@ -21,22 +23,36 @@ ListenToGameEvent("entity_killed", function(keys)
 	local damagebits = keys.damagebits -- This might always be 0 and therefore useless
 
 	if (killedUnit and killedUnit:IsRealHero()) then
+		StopGlobalSound(streak_responses[killedUnit:GetUnitName()])
+
 		local streak = PlayerResource:GetStreak(attackerUnit:GetPlayerOwnerID())
 		local multipleKillCount = attackerUnit.GetMultipleKillCount and attackerUnit:GetMultipleKillCount() or 0
 		print("kill streak:", streak)
 		print("multiple kill count", attackerUnit.GetMultipleKillCount and attackerUnit:GetMultipleKillCount() or 0)
 		
 		if streak >= 10 then
-			for i = 2, 5 do
-				StopGlobalSound("truth"..i)
+			if not is_coalescence_playing then
+				is_coalescence_playing = true
+				for i = 2, 5 do
+					StopGlobalSound("truth"..i)
+				end
+				EmitGlobalSound("coalescence")
 			end
-			EmitGlobalSound("coalescence")
 		elseif multipleKillCount > 1 then
+			is_coalescence_playing = false
 			for i = 2, 5 do
 				StopGlobalSound("truth"..i)
 			end
 			StopGlobalSound("coalescence")
 			EmitGlobalSound("truth"..math.min(multipleKillCount, 5))
+
+			if multipleKillCount == 2 and attackerUnit:IsHero() then
+				Timers:CreateTimer(2, function()
+					if attackerUnit:IsAlive() then
+						EmitGlobalSound(streak_responses[attackerUnit:GetUnitName()])
+					end
+				end)
+			end
 		end
 	end
 
