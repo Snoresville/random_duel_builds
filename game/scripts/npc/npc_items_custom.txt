@@ -80,4 +80,31 @@
 		"ItemInitialStockTime"			"0"
 		"ItemInitialStockTimeTurbo"		"0"
 	}
+
+	"item_new_draft"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"       
+        "BaseClass"						"item_lua"
+        "AbilityTextureName" 		    "item_new_draft"
+		"ScriptFile"					"game_module/item_new_draft"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"1.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"5000"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemPurchasable"				"1"
+		"ItemSellable"		    		"1"
+		"ItemInitialCharges"			"1"
+
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+	}
 }
