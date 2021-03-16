@@ -31,6 +31,7 @@ softRequire("settings_misc")
 softRequire("startitems")
 softRequire("thinker")
 
+require("game_module/duel_build_tables")
 require("game_module/duel_build_functions")
 require("game_module/duel_build_listeners")
 

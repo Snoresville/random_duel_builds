@@ -20,10 +20,6 @@ if IsInToolsMode() then
 
 
 
-	local addInf = LoadKeyValues("addoninfo.txt")
-	if not addInf.maps then	addInf.maps = "dota" end
-	kvToFile({AddonInfo = addInf}, ADDON_FOLDER .. "addoninfo.txt")
-
 	-- copyFile("../../dota/scripts/npc/npc_units.txt", ADDON_FOLDER .. "scripts/npc/units.txt")
 	-- copyFile("../../dota/scripts/npc/npc_abilities.txt", ADDON_FOLDER .. "scripts/npc/abilities.txt")
 	-- copyFile("../../dota/scripts/npc/npc_heroes.txt", ADDON_FOLDER .. "scripts/npc/heroes.txt")

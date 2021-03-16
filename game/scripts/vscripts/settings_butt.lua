@@ -3,9 +3,9 @@ BUTTINGS = {
 
 	GAME_TITLE = WORKSHOP_TITLE,
 
-	GAME_MODE = "AP",                   -- "AR" "AP" All Random/ All Pick
-	ALLOW_SAME_HERO_SELECTION = 0,      -- 0 = everyone must pick a different hero, 1 = can pick same
-	HERO_BANNING = 1,                   -- 0 = no banning, 1 = banning phase
+	GAME_MODE = "AR",                   -- "AR" "AP" All Random/ All Pick
+	ALLOW_SAME_HERO_SELECTION = 1,      -- 0 = everyone must pick a different hero, 1 = can pick same
+	HERO_BANNING = 0,                   -- 0 = no banning, 1 = banning phase
 	USE_BOTS = 0, -- TODO
 	MAX_LEVEL = MAX_LEVEL,              -- (default = 30) the max level a hero can reach
 
@@ -47,6 +47,15 @@ BUTTINGS = {
 	BUYBACK_RULES = 0,                  -- 0 = normal, 1 = use buyback restrictions
 	BUYBACK_LIMIT = 1,                  -- Max amount of buybacks
 	BUYBACK_COOLDOWN = 600,             -- Cooldown for buyback
+
+	-- Duel Build Options
+	DUEL_BUILD_PASSIVES			= 1,
+	DUEL_BUILD_MOVEMENT			= 1,
+	DUEL_BUILD_DAMAGE_SCALING	= 1,
+	DUEL_BUILD_ATTACK_MODS		= 0,
+	DUEL_BUILD_DISABLE			= 0,
+	DUEL_BUILD_BUFF				= 0,
+	DUEL_BUILD_DEBUFF			= 0,
 }
 
 function BUTTINGS.ALTERNATIVE_XP_TABLE()	-- xp values if MAX_LEVEL is different than 30
