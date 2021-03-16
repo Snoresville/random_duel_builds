@@ -54,7 +54,6 @@ DUEL_BUILD_PASSIVES = {
     "chen_divine_favor",
     "spectre_desolate",
     "spectre_dispersion",
-    "spirit_breaker_empowering_haste",
     "spirit_breaker_greater_bash",
     "ursa_fury_swipes",
     "alchemist_goblins_greed",

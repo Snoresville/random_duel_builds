@@ -18,5 +18,5 @@ function examplemodifier:OnCreated(event)
 end
 
 function examplemodifier:OnIntervalThink()
-	print(PlayerResource:GetStreak(self:GetParent():GetPlayerOwnerID()))
+	print()
 end
