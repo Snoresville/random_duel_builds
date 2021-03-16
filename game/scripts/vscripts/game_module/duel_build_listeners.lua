@@ -35,7 +35,8 @@ ListenToGameEvent("entity_killed", function(keys)
 			for i = 2, 5 do
 				StopGlobalSound("truth"..i)
 			end
-			EmitGlobalSound("truth"..math.min(multipleKillCount))
+			StopGlobalSound("coalescence")
+			EmitGlobalSound("truth"..math.min(multipleKillCount, 5))
 		end
 	end
 

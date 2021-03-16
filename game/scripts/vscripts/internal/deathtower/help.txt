@@ -1,0 +1,9 @@
+place this in npc_abilities_custom.txt under the entire "DOTAAbilities" block
+#base "../vscripts/internal/deathtower/deathtower.txt"
+
+place this in addon_game_mode.lua, somewhere at the top
+require("internal/deathtower/deathtower_listener")
+
+for optional zap sounds, place this within the Precache(context) function
+PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_lion.vsndevts", context)
+PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_lina.vsndevts", context)

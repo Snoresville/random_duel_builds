@@ -7,6 +7,7 @@ _G.GameMode = _G.GameMode or class({})
 
 require("internal/utils/util")
 require("internal/init")
+require("internal/deathtower/deathtower_listener")
 
 require("internal/courier") -- EditFilterToCourier called from internal/filters
 

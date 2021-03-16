@@ -1,0 +1,56 @@
+"DOTAAbilities"
+{
+	"deathtower"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"internal/deathtower/deathtower"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"bane_fiends_grip"	// steal the icon from this ability
+		"MaxLevel"						"1"							// Maximum skillable level
+		"AbilitySpecial"											
+		{
+			// filling in some values with some names
+			// the values can be shown inside the Tooltip if you edit game/resource/addon_english.txt
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"max_hp_percent_damage"					"25"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"tower_max_hp_multiplier"					"3"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"base_armor"					"25"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"base_magic_resist"					"75"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"scaling"					"0"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"scaling_factor"			"1"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"bonus_attack_speed"		"0"
+			}
+			"08"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"has_multishot"		"0"
+			}
+		}
+	}
+}

@@ -61,3 +61,5 @@
 	}
 
 }
+
+#base "../vscripts/internal/deathtower/deathtower.txt"
