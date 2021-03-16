@@ -44,6 +44,11 @@ function Precache( context )
 			PrecacheResource( "particle", "*.vpcf", context )
 			PrecacheResource( "particle_folder", "particles/folder", context )
 	]]
+
+	local heroeskv = LoadKeyValues("scripts/npc/herolist.txt")
+    for hero, _ in pairs(heroeskv) do
+        PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_"..string.sub(hero,15)..".vsndevts", context )
+    end
 end
 
 function Spawn()
