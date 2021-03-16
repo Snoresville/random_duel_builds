@@ -60,6 +60,10 @@
 		"AssociatedConsumable"			"0"
 	}
 
+	"legion_commander_duel"
+	{
+		"AbilityCooldown"				"15.0"
+	}
 }
 
 #base "../vscripts/internal/deathtower/deathtower.txt"
