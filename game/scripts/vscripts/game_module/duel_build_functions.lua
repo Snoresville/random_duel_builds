@@ -20,7 +20,7 @@ function CDOTA_BaseNPC:SelectAbilities()
     local ABILITY_LIST = table.copy(DUEL_BUILD_FULL_ABILITY_LIST)
     for i = 0, 4 do
         local selected_ability_index = math.random(#ABILITY_LIST)
-        local selected_ability = table.remove(ABILITY_LIST, selected_ability_index)
+        local selected_ability = #ABILITY_LIST == 0 and "legion_commander_duel" or table.remove(ABILITY_LIST, selected_ability_index)
 
         self:RemoveAbilityByHandle(self:GetAbilityByIndex(i))
         self:AddAbility(selected_ability)

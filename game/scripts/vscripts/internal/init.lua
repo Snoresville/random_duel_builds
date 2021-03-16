@@ -26,3 +26,15 @@ if IsInToolsMode() then
 	-- print(fileToString("http://github.com/SteamDatabase/GameTracking-Dota2/blob/master/game/dota/pak01_dir/scripts/npc/items.txt"))
 
 end
+
+function InitialiseRandom()
+    local newRandomSeed = math.random()
+
+    for i in string.gmatch(GetSystemTime(), "%d") do
+        newRandomSeed = newRandomSeed * (i + 1)
+        math.randomseed(newRandomSeed)
+        newRandomSeed = newRandomSeed + math.random()
+    end
+    --math.randomseed()
+end
+InitialiseRandom()
