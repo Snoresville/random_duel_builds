@@ -19,7 +19,7 @@
 			"02"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"tower_max_hp_multiplier"					"3"
+				"tower_max_hp_multiplier"					"1.5"
 			}
 			"03"
 			{
