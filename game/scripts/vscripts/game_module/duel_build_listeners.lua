@@ -17,6 +17,8 @@ end, self)
 local is_coalescence_playing = false
 local streak_responses = LoadKeyValues("scripts/npc/topplays.txt")
 ListenToGameEvent("entity_killed", function(keys)
+	if BUTTINGS.SOUND == 0 then return end
+
 	-- for k,v in pairs(keys) do	print("entity_killed",k,v) end
 	local attackerUnit = keys.entindex_attacker and EntIndexToHScript(keys.entindex_attacker)
 	local killedUnit = keys.entindex_killed and EntIndexToHScript(keys.entindex_killed)

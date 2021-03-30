@@ -56,6 +56,8 @@ BUTTINGS = {
 	DUEL_BUILD_DISABLE			= 0,
 	DUEL_BUILD_BUFF				= 0,
 	DUEL_BUILD_DEBUFF			= 0,
+
+	SOUND = 0,
 }
 
 function BUTTINGS.ALTERNATIVE_XP_TABLE()	-- xp values if MAX_LEVEL is different than 30

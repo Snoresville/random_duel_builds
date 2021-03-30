@@ -1,6 +1,6 @@
 <root>
 	<styles>
-		<include src="file://{resources}/styles/dotastyles.css"/>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c"/>
 		<include src="file://{resources}/styles/custom_game/team_select_butt.css"/>
 	</styles>
 	<scripts>
@@ -183,6 +183,8 @@
 									onactivate="onPanelChange('DUEL_BUILD_BUFF')"/>
 					<ToggleButton id="DUEL_BUILD_DEBUFF" class="SettingsItem" text="Debuffs"
 									onactivate="onPanelChange('DUEL_BUILD_DEBUFF')"/>
+					<ToggleButton id="SOUND" class="SettingsItem" text="sound"
+									onactivate="onPanelChange('SOUND')"/>
 				</Panel>
 				<!-- <Panel class="SettingsElement"> -->
 				<!-- <Label class="SettingsElementTitle" text="Bots?"/> -->
